@@ -4,7 +4,10 @@ const fs = require('fs');
 // ) --> should go DOWN 1 floor 
 
 function question1() {
-
+  fs.readFile('./santa.text', (err, data) => {
+    const directions = data.toString(); 
+    console.log(directions)
+  })
 }
 
 
